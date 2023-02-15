@@ -3,15 +3,14 @@
 * Template URL: https://bootstrapmade.com/theevent-conference-event-bootstrap-template/
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
-
 */
 
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
 body {
-  background:#000000;
-  color: #2f3138;
+  background: #000000;
+  color: #000000;
   font-family: "Open Sans", sans-serif;
 }
 
@@ -478,7 +477,7 @@ h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url(../img/god-city.gif) top center;
+  background: url(../img/hero-bg.gif) top center;
   background-size: cover;
   overflow: hidden;
   position: relative;
@@ -527,6 +526,14 @@ h6 {
   font-weight: 600;
   text-transform: uppercase;
 }
+#hero h3 {
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+  font-size: 30px;
+  font-weight: 200;
+  text-transform: uppercase;
+}
+
 
 #hero h1 span {
   color: #5A3DCE;
@@ -671,11 +678,11 @@ h6 {
 # About Section
 --------------------------------------------------------------*/
 #about {
-  background: url("../img/about-bg.jpg");
+  background: url("../img/about-b.gif");
   background-size: cover;
   overflow: hidden;
   position: relative;
-  color: #fff;
+  color: #00000;
   padding: 60px 0 40px 0;
 }
 
@@ -722,6 +729,17 @@ h6 {
 #speakers {
   padding: 60px 0 30px 0;
 }
+
+#speakers h1 {
+  color: #fff;
+  font-size: 36px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 10px;
+
+}
+
 
 #speakers .speaker {
   position: relative;
@@ -890,7 +908,7 @@ h6 {
 }
 
 #schedule .schedule-item {
-  border-bottom: 1px solid #cad4f6;
+  border-bottom: 1px solid #417cf2;
   padding-top: 15px;
   padding-bottom: 15px;
   transition: background-color ease-in-out 0.3s;
@@ -946,6 +964,16 @@ h6 {
 #venue {
   padding: 60px 0;
 }
+#venue h1 {
+  color: #fff;
+  font-size: 36px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 10px;
+
+}
+
 
 #venue .container-fluid {
   margin-bottom: 3px;
@@ -1075,6 +1103,16 @@ h6 {
   padding: 60px;
   overflow: hidden;
 }
+#gallery h1 {
+  color: #fff;
+  font-size: 36px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 10px;
+
+}
+
 
 #gallery .swiper-pagination {
   margin-top: 20px;
@@ -1117,6 +1155,15 @@ h6 {
 --------------------------------------------------------------*/
 #supporters {
   padding: 60px 0;
+}
+#supporters h1 {
+  color: #fff;
+  font-size: 36px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 10px;
+
 }
 
 #supporters .supporters-wrap {
