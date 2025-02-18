@@ -5,190 +5,9 @@
 * License: https://bootstrapmade.com/license/
 */
 
-/*--------------------------------------------------------------*/
-
-
-/*gallery items starts here*/
-#gallery {
-    padding: 50px 0;
-    background-color: #f9f9f9;
-  }
-
-  #gallery h2 {
-    color: #191970;
-    font-weight: bold;
-    margin-bottom: 30px;
-  }
-
-  .gallery-item {
-    margin-bottom: 30px;
-  }
-
-  .gallery-item img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    transition: transform 0.3s ease-in-out;
-  }
-
-  .gallery-item img:hover {
-    transform: scale(1.05);
-  }
-
-  /* Responsive Layout for the Gallery */
-  @media (max-width: 768px) {
-    .gallery-item {
-      margin-bottom: 20px;
-    }
-  }
-
-
-/*  Gallery items ends here*/
-
-/* Define the container for the flip effect */
-.flip-container {
-  perspective: 1000px; /* Set perspective for the 3D effect */
-  display: inline-block;
-}
-
-.flip-effect {
-  transition: transform 0.6s; /* Smooth transition for the flip effect */
-  transform-style: preserve-3d; /* Preserve 3D effect */
-  backface-visibility: hidden; /* Hide the back side of the image during the flip */
-}
-
-/* Define the flip effect on hover */
-.flip-container:hover .flip-effect {
-  transform: rotateY(360deg); /* Flip the image along the Y-axis */
-}
-
-/* Optionally: Add more style to the image */
-.flip-container img {
-  display: block; /* Remove unwanted space below the image */
-}
-
-
-
-
-
-
-
-/*looking for some fun button*/
-
-
-/* Button Styling */
-#funbutton {
-  background-color: #546399; /* Blue background */
-  color: white; /* White text */
-  padding: 10px 20px; /* Adjusted padding for a smaller width */
-  border: none; /* No border */
-  border-radius: 30px; /* Rounded corners */
-  font-size: 16px; /* Font size */
-  cursor: pointer; /* Cursor pointer on hover */
-  transition: all 0.3s ease; /* Smooth transition effect */
-  box-shadow: 0 4px 8px rgba(0, 123, 255, 0.5); /* Blue shadow effect */
-  width: auto; /* Automatic width based on content */
-  max-width: 250px; /* Max width for better responsiveness */
-  text-align: center; /* Ensure the text inside the button is centered */
-  margin: 0 auto; /* Center horizontally */
-  display: block; /* Make button a block element to apply auto margins */
-}
-
-#funbutton:hover {
-  background-color: #0056b3; /* Darker blue on hover */
-  box-shadow: 0 6px 12px rgba(0, 86, 179, 0.7); /* Deeper shadow on hover */
-  transform: scale(1.05); /* Slightly enlarge the button */
-}
-/*looking for some fun button ends here*/
-
-
-
-/*Sponsor section starts here*/
-.sponsor-section {
-    background: white;
-    padding: 0px 0;
-    overflow: hidden;
-    width: 100%;
-}
-
-.sponsor-wrapper {
-    display: flex;
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-}
-
-/* This ensures smooth infinite scrolling */
-.sponsor-track {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    flex-wrap: nowrap;
-    width: max-content;
-    animation: marquee 10s linear infinite;
-}
-
-/* Image Styling */
-.sponsor-track img {
-    width: 100px;
-    height: auto;
-    display: block;
-    object-fit: contain;
-}
-
-/* Infinite Scrolling Effect */
-@keyframes marquee {
-    from {
-        transform: translateX(0);
-    }
-    to {
-        transform: translateX(-50%);
-    }
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-    .sponsor-track img {
-        width: 120px;
-    }
-    .sponsor-track {
-        animation-duration: 70s;
-    }
-}
-
-
-/*sponsorship ends*/
-
-
-/*-----------------Cursor---------------------*/
-/* Cursor trail container */
-#cursor-trail {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    z-index: 9999;
-}
-
-/* Smooth comet-like trail */
-.trail-dot {
-    position: absolute;
-    width: 12px;
-    height: 12px;
-    background: white;
-    border-radius: 50%;
-    pointer-events: none;
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
-    opacity: 0;
-    transition: transform 0.1s linear, opacity 0.2s ease-out;
-}
-
-
-/------------cursor end here ----------/
+/*--------------------------------------------------------------
+# General
 --------------------------------------------------------------*/
-
 body {
   background: #fff;
   color: #546399;
@@ -203,7 +22,7 @@ a {
 }
 #allsec
 {
-
+background-image: url('cenzest.github.io-main/assets/img/VJl.png'); 
 background-size:cover;
 background-repeat:no-repeat;
 background-position:center;
@@ -299,7 +118,7 @@ h6 {
   display: block;
   width: 80px; /* Slightly larger to create more emphasis */
   height: 5px;
-  background: #0000;
+  background: #2c3e50;
   bottom: 0;
   left: calc(50% - 40px); /* Center aligned */
   border-radius: 5px; /* Rounded corners for a softer look */
@@ -740,16 +559,8 @@ body::after {
 @media (min-width: 1024px) {
   #hero {
     background-attachment: fixed;
-    position: relative;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 60%, black 100%), url('your-image.jpg') center/cover no-repeat;
-  text-align: center;
-  color: white;
-  padding: 100px 0;
   }
 }
-
-
-
 
 #hero:before {
   content: "";
@@ -1005,7 +816,7 @@ body::after {
 }
 
 #speakers .speaker .details {
-  background: #0000;
+  background: rgba(6, 12, 34, 0.76);
   position: absolute;
   left: 0;
   bottom: -40px;
@@ -1099,10 +910,6 @@ body::after {
 /*--------------------------------------------------------------
 # Schedule Section
 --------------------------------------------------------------*/
-
-
-
-
 #schedule {
   padding: 60px 0 60px 0;
 }
@@ -1124,7 +931,7 @@ body::after {
   border: none;
   border-radius: 50px;
   font-weight: 600;
-  background-color: dimgrey;
+  background-color: #0e1b4d;
   color: #fff;
   padding: 10px 100px;
 }
@@ -1148,8 +955,8 @@ body::after {
 }
 
 #schedule .nav-tabs a.active {
-  background-color: whitesmoke;
-  color: black;
+  background-color: #5A3DCE;
+  color: #fff;
 }
 
 #schedule .sub-heading {
@@ -1176,17 +983,9 @@ body::after {
   transition: background-color ease-in-out 0.3s;
 }
 
-#schedule .schedule-item {
-  position: relative;
-  transition: box-shadow 0.3s ease-in-out;
-}
-
 #schedule .schedule-item:hover {
-  background-color: rgba(90, 61, 206, 0.05); /* Subtle background change */
-  box-shadow: 0px 4px 15px rgba(90, 61, 206, 0.2); /* Soft glowing shadow */
-  border-radius: 10px; /* Slight rounding of corners */
+  background-color: #fff;
 }
-
 
 #schedule .schedule-item time {
   padding-bottom: 5px;
@@ -1651,10 +1450,6 @@ body::after {
   padding: 60px 0;
 }
 
-/*black fog*/
-
-
-/*----------end of black fog--------*/
 #contact .contact-info {
   margin-bottom: 20px;
   text-align: center;
@@ -1817,16 +1612,6 @@ body::after {
   font-size: 14px;
 }
 
-#footer .footer-top .row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-#footer .footer-contact {
-  text-align: right;
-}
-
 #footer .footer-top {
   background: #040919;
   padding: 60px 0 30px 0;
@@ -1962,26 +1747,11 @@ ght: 26px;
 
 #footer .copyright {
   text-align: center;
-  padding-top: 5px;
+  padding-top: 30px;
 }
 
 #footer .credits {
   text-align: center;
   font-size: 13px;
   color: #ddd;
-}
-.image-slider { /* Style the new section */
-    padding: 40px 0; /* Adjust padding as needed */
-    /* Add any other styling you want for the section */
-}
-
-.swiper {
-    width: 100%;
-    height: auto;
-}
-
-.swiper-slide img {
-    width: 75%; /* Make the image take up the full width of the slide */
-    height: 75%; /* Make the image take up the full height of the slide */
-    object-fit: cover; /* Or contain, fill, scale-down as needed */
 }
