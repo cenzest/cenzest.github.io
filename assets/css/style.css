@@ -1,4 +1,4 @@
-/**
+2/**
 * Template Name: TheEvent - v4.10.0
 * Template URL: https://bootstrapmade.com/theevent-conference-event-bootstrap-template/
 * Author: BootstrapMade.com
@@ -1970,18 +1970,54 @@ ght: 26px;
   font-size: 13px;
   color: #ddd;
 }
-.image-slider { /* Style the new section */
-    padding: 40px 0; /* Adjust padding as needed */
-    /* Add any other styling you want for the section */
+.image-slider {
+    padding: 40px 0;
+    display: flex; /* Enable flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 500px; /* Or a specific height if you don't want full viewport height */
+    width: 100%; /* Or a specific width */
 }
 
 .swiper {
-    width: 100%;
-    height: auto;
+    width: 80%; /* Adjust as needed - controls the width of the slider itself */
+    height: auto; /* Height determined by content */
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .swiper-slide img {
-    width: 75%; /* Make the image take up the full width of the slide */
-    height: 75%; /* Make the image take up the full height of the slide */
-    object-fit: cover; /* Or contain, fill, scale-down as needed */
+    max-width: 100%; /* Image won't exceed slide width */
+    max-height: 100%; /* Image won't exceed slide height */
+    object-fit: contain; /* Or cover, fill, scale-down as needed */
+}
+
+.swiper-container {
+    padding: 0 20px; /* Optional: Add space around the slider */
+}
+
+/* If you need to further constrain the image size */
+.swiper-slide img {
+    width: auto; /* Or a specific width */
+    height: auto; /* Or a specific height */
+}
+
+
+/* Alternative method using grid (equally good) */
+
+.image-slider {
+    padding: 40px 0;
+    display: grid;
+    place-items: center; /* Centers both horizontally and vertically */
+    height: 100%; /* Adjust as needed */
+    width: 100%;
+}
+
+.swiper {
+    width: 80%; /* Adjust as needed */
+    height: auto;
 }
